@@ -1,0 +1,31 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<h2 id="date"></h2>
+		<h2 id="day"></h2>
+		<h2 id="month"></h2>
+		<h2 id="year"></h2>
+		<h2 id="hour"></h2>
+		<h2 id="minute"></h2>
+		<h2 id="time"></h2>
+		<script>
+			var days=["sunday","monday","tuesday","wendesday","thursday","friday","saturday"];
+			var months=["jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec"];
+			var d=new Date();
+			document.getElementById("date").innerHTML="The date is "+d;
+			var day=d.getDay();
+			document.getElementById("day").innerHTML="The day is "+days[parseInt(day)%6];
+			var month=d.getMonth();
+			document.getElementById("month").innerHTML="The month is "+months[month];
+			var year=d.getYear();
+			document.getElementById("year").innerHTML="The year is "+year;
+			var hour=d.getHours();
+			document.getElementById("hour").innerHTML="The hour is "+hour;
+			var minute=d.getMinutes();
+			document.getElementById("minute").innerHTML="The minute is "+minute;
+			var time=d.getTime();
+			document.getElementById("time").innerHTML="The time is "+time;
+		</script>
+	</body>
+</html>
