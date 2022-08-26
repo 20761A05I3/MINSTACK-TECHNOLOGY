@@ -1,0 +1,21 @@
+<html>
+<body>
+	<script>
+	function fun1(){
+		document.write("function 1 is called"+"<br>");
+	}
+	function fun2(x,y){
+		document.write(x+y+"<br>");
+		document.write("function 2 is called"+"<br>");
+	}
+	function fun3(call2,call1) {
+		document.write("function 3 is called"+"<br>");
+		call1()
+		call2(10,20);
+	}
+	fun3(fun2,fun1);
+	//setTimeout(fun1,3000);
+	//setTimeout(fun2,2000);
+	</script>
+</body>
+</html>
